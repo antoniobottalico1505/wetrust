@@ -94,9 +94,9 @@ export default function App({ Component, pageProps }) {
 return (
   <>
     <Head>
-      <link rel="icon" type="image/png" href="/WeTrust.png" />
-      <link rel="shortcut icon" href="/WeTrust.png" />
-      <link rel="apple-touch-icon" href="/WeTrust.png" />
+      <link rel="icon" type="image/png" href="/WeT.png" />
+      <link rel="shortcut icon" href="/WeT.png" />
+      <link rel="apple-touch-icon" href="/WeT.png" />
     </Head>
 
     <AuthContext.Provider value={authValue}>
