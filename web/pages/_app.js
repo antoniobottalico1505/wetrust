@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { createContext, useCallback, useEffect, useMemo, useState } from "react";
 import { apiFetch } from "../lib/api";
 import { getSession, clearSession } from "../lib/session";
@@ -90,9 +91,16 @@ export default function App({ Component, pageProps }) {
     return v;
   }, [user, ready, refresh, logout]);
 
-  return (
+ return (
+  <>
+    <Head>
+      <link rel="icon" type="image/png" href="/WeTrust.png" />
+      <link rel="shortcut icon" href="/WeTrust.png" />
+      <link rel="apple-touch-icon" href="/WeTrust.png" />
+    </Head>
+
     <AuthContext.Provider value={authValue}>
       <Component {...pageProps} />
     </AuthContext.Provider>
-  );
-}
+  </>
+);
