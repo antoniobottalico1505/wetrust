@@ -36,7 +36,7 @@ export default function Layout({ title = "WeTrust", children }) {
         <main className="main">{children}</main>
 
         <footer className="footer">
-          <span>© {new Date().getFullYear()} WeTrust.</span>
+          <span>© {new Date().getFullYear()} BTTsoftware.</span>
           <span className="footer-note">Fiducia umana → Aiuto reale → Pagamento semplice.</span>
         </footer>
       </div>
